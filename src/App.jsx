@@ -1,13 +1,21 @@
 import React, { Component } from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+
 import { Home } from "containers";
+
+import { Normalize } from "styled-normalize";
+import AppStyle from "./AppStyle";
 
 class App extends Component {
   render() {
     return (
-      <div className="container">
-        <Route path="/" exact component={Home} />
-      </div>
+      <React.Fragment>
+        <Normalize />
+        <AppStyle />
+        <Switch>
+          <Route path="/" exact component={Home} />
+        </Switch>
+      </React.Fragment>
     );
   }
 }
