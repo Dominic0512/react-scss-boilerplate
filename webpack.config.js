@@ -40,6 +40,11 @@ module.exports = {
     ]
   },
   resolve: {
+    alias: {
+      components: path.resolve(__dirname, "src/components/"),
+      containers: path.resolve(__dirname, "src/containers/"),
+      assets: path.resolve(__dirname, "src/assets/")
+    },
     extensions: [".js", ".jsx", ".scss"]
   },
   plugins: [htmlPlugin],
