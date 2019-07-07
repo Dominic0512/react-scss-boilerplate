@@ -25,6 +25,17 @@ module.exports = {
       {
         test: /\.scss$/,
         use: ["style-loader", "css-loader", "sass-loader"]
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf|png|svg|jpg|gif)$/,
+        use: {
+          loader: "url-loader",
+          options: {
+            limit: 5000,
+            name: "[hash:7].[ext]",
+            outputPath: "assets"
+          }
+        }
       }
     ]
   },
