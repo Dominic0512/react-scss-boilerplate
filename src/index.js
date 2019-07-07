@@ -1,6 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter, Switch } from "react-router-dom";
+import App from "./App";
 
-let element = <h1>Hello, Here we go</h1>;
+let rootElement = (
+  <BrowserRouter>
+    <Switch>
+      <App />
+    </Switch>
+  </BrowserRouter>
+);
 
-ReactDOM.render(element, document.getElementById("root"));
+ReactDOM.render(rootElement, document.getElementById("root"));
