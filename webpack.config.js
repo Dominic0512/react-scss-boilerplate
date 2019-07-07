@@ -8,7 +8,7 @@ const htmlPlugin = new HtmlWebPackPlugin({
 
 module.exports = {
   mode: "development",
-  entry: ["./src/index.js"],
+  entry: ["./src/index.jsx"],
   output: {
     path: path.join(__dirname, "dist"),
     filename: "bundle.js"
@@ -27,6 +27,9 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"]
       }
     ]
+  },
+  resolve: {
+    extensions: [".js", ".jsx", ".scss"]
   },
   plugins: [htmlPlugin],
   devServer: {
