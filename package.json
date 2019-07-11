@@ -1,12 +1,12 @@
 {
-  "name": "react-boilerplate",
+  "name": "react-scss-boilerplate",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack-dev-server --mode development --open --hot"
   },
-  "repository": "git@github.com:Dominic0512/react-boilerplate.git",
+  "repository": "git@github.com:Dominic0512/react-scss-boilerplate.git",
   "author": "Dominic Lee <dominiclee0512@gmail.com>",
   "license": "MIT",
   "devDependencies": {
